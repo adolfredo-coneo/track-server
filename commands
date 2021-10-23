@@ -1,0 +1,5 @@
+//
+npm install bcrypt express jsonwebtoken mongoose nodemon
+
+//dotenv
+npm install dotenv
