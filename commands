@@ -3,3 +3,11 @@ npm install bcrypt express jsonwebtoken mongoose nodemon
 
 //dotenv
 npm install dotenv
+
+//git
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/adolfredo-coneo/track-server.git
+git push -u origin main
