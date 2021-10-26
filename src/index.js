@@ -6,8 +6,17 @@ const mongoose = require('mongoose');
 const authRouter = require('./routes/authRoutes');
 const trackRouter = require('./routes/trackRoutes');
 const requireAuth = require('./middlewares/requireAuth');
+const cors = require('cors');
 
 const app = express();
+
+app.set("trust proxy", 1);
+app.use(
+  cors({
+    origin: 'http://localhost:19006',
+    credentials: true,
+  })
+);
 
 app.use(express.json());
 app.use(authRouter);
